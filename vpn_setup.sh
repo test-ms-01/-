@@ -1,7 +1,7 @@
 #!/bin/bash -x
 
 #
-# moresec/VPN
+# chinalife/VPN
 #
 # Installs a PPTP VPN-only system for CentOS
 #
@@ -17,8 +17,8 @@ VPN_IP=`curl ipv4.icanhazip.com>/dev/null 2>&1`
 VPN_USER=""
 VPN_PASS=""
 
-VPN_LOCAL="192.168.0.150"
-VPN_REMOTE="192.168.6.234"
+VPN_LOCAL="36.112.11.11"
+VPN_REMOTE="114.247.91.202"
 
 yum -y groupinstall "Development Tools"
 rpm -Uvh http://poptop.sourceforge.net/yum/stable/rhel6/pptp-release-current.noarch.rpm
